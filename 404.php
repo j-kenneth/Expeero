@@ -6,8 +6,6 @@
  * @package   Themedelight/AdventureTours
  * @version   1.0.0
  */
- 
- //This is a test
 
 adventure_tours_di( 'app' )->addBodyClass( 'page-404' );
 
