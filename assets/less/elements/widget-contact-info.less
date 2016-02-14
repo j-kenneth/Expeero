@@ -1,0 +1,49 @@
+.widget-contact-info{
+	&__item{
+		display:table;
+		width:100%;
+		margin-bottom:3px;
+		vertical-align:middle;
+
+		&:last-child{
+			margin-bottom:0;
+		}
+
+		&__icon{
+			display:table-cell;
+			width:27px;
+			vertical-align:middle;
+		}
+
+		&__text{
+			display:table-cell;
+			.padding-left(10px);
+		}
+	}
+
+	i{
+		width:27px;
+		height:27px;
+		border-radius:100%;
+		position:relative;
+		background:@footer-text-color;
+		color:@footer-bg;
+		font-size:1.071em;
+
+		&:before{
+			position:absolute;
+			top:50%;
+			.left(50%);
+			.translate(-50%, -50%);
+		}
+	}
+}
+
+.sidebar{
+	.widget-contact-info{
+		i{
+			background:@main-color1;
+			color:@body-bg;
+		}
+	}
+}
